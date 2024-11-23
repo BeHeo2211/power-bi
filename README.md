@@ -8,6 +8,6 @@
 ---
 
 ## This is the second project
-![Second Project](images/second-project.jpg)
+![Second Project](images/second-project.gif)
 
 **Description:** In this project ...
