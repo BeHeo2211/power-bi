@@ -1,7 +1,7 @@
 # Projects Showcase
 
 ## This is the first project
-![First Project](images/first-project.jpg)
+![First Project](images/first-project.gif)
 
 **Description:** In this project ...
 
