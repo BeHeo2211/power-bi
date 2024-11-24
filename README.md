@@ -30,8 +30,9 @@ This project is based on the guidance from Alex The Analyst's Power BI course. U
   Summed up the total quantity of products sold to analyze product performance using the `SUM` function.  
 
 - **Total Profit**:  
-  Computed total profit by aggregating the profit for all products, using the `SUMX` function for row-by-row calculations.  
-
+  Computed total profit by aggregating the profit for all products, using the `SUMX` function for row-by-row calculations.
+- **Day of Week:**
+  Added a calculated column to determine the day of the week for each transaction using the `WEEKDAY` function:
 ---
 
 ### **Dashboard**
