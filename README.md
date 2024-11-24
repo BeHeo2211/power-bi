@@ -5,7 +5,7 @@
 
 ### **Description**
 This project is based on the guidance from Alex The Analyst's Power BI course. Using the dataset provided, a comprehensive Power BI report was developed. The process involved integrating data from multiple sources, performing data transformation and modeling, and creating insightful visualizations to analyze sales performance.  
-[Download Apocalypse Dataset](#) <!-- Replace `#` with the actual dataset link -->
+[Download Apocalypse Dataset](https://github.com/AlexTheAnalyst/Power-BI) <!-- Replace `#` with the actual dataset link -->
 
 ---
 
@@ -69,9 +69,90 @@ This project is based on the guidance from Alex The Analyst's Power BI course. U
 
 ---
 
-## Second Project: [Project Name Here]
+## Second Project: Data Professional Survey Breakdown
 
 ![Second Project](images/second-project.gif)
 
 ### **Description**
-In this project, ... (Provide a description of the second project here).
+This project is based on the guidance from Alex The Analyst's Power BI course. Using the dataset provided, a comprehensive Power BI report was developed. The process involved integrating data from multiple sources, performing data transformation and modeling, and creating insightful visualizations to analyze survey data.  
+[Download Dataset](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FAlexTheAnalyst%2FPower-BI%2Frefs%2Fheads%2Fmain%2FPower%2520BI%2520-%2520Final%2520Project.xlsx&wdOrigin=BROWSELINK) <!-- Replace `#` with the actual dataset link -->
+
+This dataset is from a survey conducted among data professionals to gather insights about their demographics, job roles, salaries, work-life balance, and challenges in entering the data field.
+
+---
+
+### **Preparing the Data**
+
+![Data Preparation](images/Capture3.PNG)
+
+1. **Delete Unused Columns**:  
+   - Removed unnecessary columns from the dataset, such as the `Browser` to `Referer` columns.
+
+2. **Clean Q1 (Current Job Title)**:  
+   - Used the Split Column feature to clean and standardize the responses for the question:  
+     *"Which title fits your current role?"*
+
+3. **Clean Q5 (Favorite Programming Language)**:  
+   - Applied the same Split Column technique to clean and organize the responses for the question:  
+     *"What is your favorite programming language?"*
+
+4. **Clean Q3 (Current Yearly Salary)**:  
+   - Split and replaced values to clean the salary column, ensuring consistency.  
+   - Renamed the column to **Average Salary** for better clarity.
+
+5. **Clean the Country Column**:  
+   - Standardized and cleaned country names by replacing inconsistent or missing values.
+
+---
+
+### **Dashboard**
+![Dashboard Visualization](images/Capture4.PNG)
+
+1. **Country of Survey Takers (Top Left: Tree Map)**  
+   - **Type**: Tree Map  
+   - **Description**: Shows the distribution of survey respondents by country.  
+   - **Insight**: Highlights the major countries participating in the survey (e.g., United States, India, Canada).
+
+2. **Average Salary by Job Title (Top Middle: Bar Chart)**  
+   - **Type**: Clustered Bar Chart  
+   - **Description**: Displays the average salary for each job title, such as Data Scientist, Data Engineer, and Data Analyst.  
+   - **Insight**: Identifies the highest-earning roles (e.g., Data Scientist) and compares average salaries across job roles.
+
+3. **Total Survey Takers and Average Age (Top Right: KPI Cards)**  
+   - **Type**: KPI Cards  
+   - **Description**:  
+     - Total count of survey participants: `629`.  
+     - Average age of respondents: `29.87` years.  
+   - **Insight**: Provides a quick snapshot of the survey demographics.
+
+4. **Favorite Programming Language (Bottom Left: Stacked Bar Chart)**  
+   - **Type**: Stacked Bar Chart  
+   - **Description**: Shows the count of votes for favorite programming languages (e.g., Python, R, JavaScript) across different job titles.  
+   - **Insight**: Highlights Python as the most preferred programming language among data professionals.
+
+5. **Difficulty to Break Into Data (Bottom Middle: Donut Chart)**  
+   - **Type**: Donut Chart  
+   - **Description**: Visualizes how respondents rated the difficulty of breaking into the data field (e.g., Very Easy, Easy, Difficult).  
+   - **Insight**: Shows that a significant percentage found it "Neither Easy nor Difficult," with smaller groups reporting "Very Difficult."
+
+6. **Work-Life Balance and Salary Satisfaction (Bottom Right: Gauges)**  
+   - **Type**: Gauges  
+   - **Description**:  
+     - **Work-Life Balance**: Average satisfaction score of `5.75` out of 10.  
+     - **Salary Satisfaction**: Average satisfaction score of `4.27` out of 10.  
+   - **Insight**: Provides an overview of how satisfied data professionals are with their work-life balance and compensation.
+
+---
+
+### **Key Insights**
+- **Demographics**: The survey primarily captures responses from professionals in countries like the United States, India, and Canada.  
+- **Salary Trends**: Data Scientists and Data Engineers earn the highest average salaries compared to other roles.  
+- **Programming Preferences**: Python is overwhelmingly the most popular language among data professionals.  
+- **Career Challenges**: Most respondents found breaking into the data field to be "Neither Easy nor Difficult."  
+- **Satisfaction**: Work-life balance scores are moderate (`5.75`), while salary satisfaction is slightly lower (`4.27`).
+
+
+
+
+
+
