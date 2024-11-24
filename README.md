@@ -1,13 +1,14 @@
 # Projects Showcase
 
 ## This is the first project
-![First Project](images/first-project.gif)
+![First Project](images/second-project.gif)
 
 **Description:** In this project ...
 
 ---
 
 ## This is the second project
-![Second Project](images/second-project.gif)
+
+![Second Project](images/first-project.gif)
 
 **Description:** In this project ...
