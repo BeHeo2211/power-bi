@@ -71,7 +71,7 @@ This project is based on the guidance from Alex The Analyst's Power BI course. U
 
 ## Second Project: [Project Name Here]
 
-![Second Project](images/first-project.gif)
+![Second Project](images/second-project.gif)
 
 ### **Description**
 In this project, ... (Provide a description of the second project here).
