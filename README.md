@@ -10,7 +10,7 @@ Download Apocalypse Dataset:
 
 **Preparing the Data:**
 
-
+![First Project](images/dataset sale.PNG)
 ---
 
 ## This is the second project
