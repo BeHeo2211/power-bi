@@ -36,6 +36,8 @@ This project is based on the guidance from Alex The Analyst's Power BI course. U
 
 ### **Dashboard**
 
+##![First Project](images/Apocalypse-Sales.jpg)
+
 1. **Sum of Units Sold by Day of Week (Top Left Bar Chart)**  
    - **Type**: Clustered Column Chart  
    - **Description**: This chart shows the total number of units sold for each day of the week.  
