@@ -1,7 +1,7 @@
 # Projects Showcase
 
 ## This is the first project: Apocalypse Sales Performance Dashboard
-![First Project](images/155ca486-0c09-4272-b427-607326209c41.jfif)
+![First Project](images/Apocalypse Sales Performance Dashboard.jpg)
 
 **Description:**
 
