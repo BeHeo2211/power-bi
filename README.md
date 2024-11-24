@@ -10,7 +10,7 @@ This project is based on the guidance from Alex The Analyst's Power BI course. U
 ---
 
 ### **Preparing the Data**
-![Dataset Preparation](images/dataset-sale.PNG)
+![Dataset Preparation](images/Capture2.PNG)
 
 - **Rename Column**: Renamed the `Date` column to `Date_Purchased` in Power Query Editor for better clarity.  
 - **Filter Out Milk**: Removed rows where `Product Name` equals "Milk" as it is not relevant in an apocalyptic scenario.  
