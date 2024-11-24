@@ -142,15 +142,6 @@ This dataset is from a survey conducted among data professionals to gather insig
      - **Salary Satisfaction**: Average satisfaction score of `4.27` out of 10.  
    - **Insight**: Provides an overview of how satisfied data professionals are with their work-life balance and compensation.
 
----
-
-### **Key Insights**
-- **Demographics**: The survey primarily captures responses from professionals in countries like the United States, India, and Canada.  
-- **Salary Trends**: Data Scientists and Data Engineers earn the highest average salaries compared to other roles.  
-- **Programming Preferences**: Python is overwhelmingly the most popular language among data professionals.  
-- **Career Challenges**: Most respondents found breaking into the data field to be "Neither Easy nor Difficult."  
-- **Satisfaction**: Work-life balance scores are moderate (`5.75`), while salary satisfaction is slightly lower (`4.27`).
-
 
 
 
