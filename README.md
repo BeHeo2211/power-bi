@@ -1,7 +1,7 @@
 # Projects Showcase
 
 ## This is the first project: Apocalypse Sales Performance Dashboard
-![First Project](images/Apocalypse Sales Performance Dashboard.jpg)
+![First Project](images/Apocalypse-Sales.jpg)
 
 **Description:**
 
@@ -9,7 +9,7 @@ This project is based on the guidance from Alex The Analyst's Power BI course. U
 Download Apocalypse Dataset: 
 
 **Preparing the Data:**
-![Second Project](images/dataset sale.PNG)
+![Second Project](images/dataset-sale.PNG)
 **Rename Column**: Renamed the Date column to Date_Purchased in Power Query Editor for better clarity.
 
 **Filter Out Milk**: Removed rows where Product Name equals "Milk" as it is not relevant in an apocalyptic scenario.
