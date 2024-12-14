@@ -1,6 +1,106 @@
 # Projects Showcase
 
-## First Project: Apocalypse Sales Performance Dashboard
+# Project: PEW Retail Inc. Sales Dashboard
+
+![PEW Retail Dashboard](images/155ca486-0c09-4272-b427-607326209c41.jfif)
+
+## **Problem Statement**
+PEW Retail Inc. Ltd. has subsidiaries across the globe, selling products to various customers scattered across different geographies. They aim to create a consolidated dashboard to meet the following requirements:
+
+1. How much tax is paid based on the various regions they do business in.
+2. The number of orders received by various product categories.
+3. Identify the top five customers consuming their products.
+4. Orders received by various regions across product categories and products.
+5. Ensure any changes or additions to the sales data automatically reflect on the dashboard without manual intervention.
+
+---
+
+## **Dataset: CSV File Names and Descriptions**
+
+1. **DimCustomer**  
+   - **Description**: Contains detailed information about customers, such as customer IDs, names, contact details, and demographics.
+
+2. **DimGeography**  
+   - **Description**: Includes geographical data such as regions, countries, cities, and postal codes.
+
+3. **DimProduct**  
+   - **Description**: Contains product details, including product IDs, names, descriptions, and other related attributes.
+
+4. **DimProductCategory**  
+   - **Description**: Categorizes products into broader categories like electronics, clothing, etc.
+
+5. **DimProductSubCategory**  
+   - **Description**: Provides details of subcategories under each product category for granular analysis.
+
+6. **FactInternetSales**  
+   - **Description**: Fact table containing sales data, including transaction details, quantities, revenues, and other metrics for internet sales.
+
+---
+
+## **Relationship Setup**
+Before proceeding, ensure all relationships between tables are established. One missing relationship is:  
+- **Create a relationship between** `ProductSubCategoryKey` in **DimProductSubCategory** and **DimProduct**.
+![PEW Retail Dashboard](images/Picture1.png)
+
+---
+
+## **Steps to Build the Dashboard**
+
+### 1. Tax Paid by Different Countries
+- **Quick Measure**:  
+  Create a new measure in `FactInternetSales`:
+  ```DAX
+  Total Tax = SUM(FactInternetSales[TaxAmt])
+## Tax Amount by Different Countries
+Now this shows tax amount by different countries.
+After that, I am going to use a bubble map to create a visualization, and in this map, under the location section, I will place `EnglishCountryRegionname`.
+
+---
+
+## Number of Orders Received by Different Product Categories
+To show this information, we can use a clustered column chart:
+- Drop the `EnglishProductCategory` into the **x-axis**.
+- For the **y-axis**, I need to add a measurable value or a fact value. For that, I add the `SalesOrderNumber` to the **y-axis** and change it to **distinct count** since we may have multiple orders for a single product.
+
+---
+
+## Finding the Top Five Customers by Sales Amount
+- First, we should check whether we have a `SalesAmount` column or not:
+  - Luckily, we do, but in case we don't, we should create a quick measure for sale amount.
+
+- To visualize the top 5 customers, I choose a **Tree Map**:
+  - First, drop `CustomerName` into the tree map and add `SalesAmount`.
+  - However, it initially shows all the customers we have, so we need to filter it:
+    - Go to the filter bar, set a filter on `CustomerName`.
+    - Configure it to display only the **top 5 customers** based on their `SalesAmount`.
+![PEW Retail Dashboard](images/Picture2.png)
+
+---
+
+## Next, I want to determine which product category has the highest number of orders, right? 
+- A bar chart is the best way to easily understand this data.
+- Now, I want to compare this information with countries. To do this, I add EnglishCountryName to the x-axis and create a measure for the number of orders using the distinct count of OrderSales. This will provide a clear comparison of product orders across different countries
+
+![PEW Retail Dashboard](images/Picture3.png)
+
+But let's say now I want to find out which product category has the maximum orders in the United States. For example, it shows that there are 9.6K orders—over 9,000 orders. To analyze this further, we need to see the breakdown of these orders by category.
+
+To achieve this, under the data field, we need to add product category name below the x-axis to enable the drill-down functionality. I add English product category to the x-axis, allowing us to drill down into the data and see which product category contributes the most orders in the United States.
+
+## Total Sales Amount by Categories for Each Country
+
+I want to find for each country what is the total sales amount by categories. I choose matrix table. Add country name in rows and I got all coutries. Category in the columns. And I create total sale measure: 
+```DAX
+total sale = SUM(FactInternetSales[SalesAmount])
+Add it into values.
+
+![PEW Retail Dashboard](images/Re2.PNG)
+![PEW Retail Dashboard](images/re1.PNG)
+
+
+
+
+## Project: Apocalypse Sales Performance Dashboard
 ![First Project](images/Apocalypse-Sales.jpg)
 
 ### **Description**
@@ -70,7 +170,7 @@ This project is based on the guidance from Alex The Analyst's Power BI course. U
 
 ---
 
-## Second Project: Data Professional Survey Breakdown
+##Project: Data Professional Survey Breakdown
 
 ![Second Project](images/second-project.gif)
 
