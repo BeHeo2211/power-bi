@@ -90,7 +90,6 @@ To achieve this, under the data field, we need to add product category name belo
 ## Total Sales Amount by Categories for Each Country
 
 I want to find for each country what is the total sales amount by categories. I choose matrix table. Add country name in rows and I got all coutries. Category in the columns. And I create total sale measure: 
-```DAX
 total sale = SUM(FactInternetSales[SalesAmount])
 Add it into values.
 
