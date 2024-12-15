@@ -2,7 +2,7 @@
 
 # Project: PEW Retail Inc. Sales Dashboard
 
-![PEW Retail Dashboard](images/155ca486-0c09-4272-b427-607326209c41.jfif)
+![PEW Retail Dashboard](images/Screen-Recording-ezgif.com-video-to-gif-converter.mp4)
 
 ## **Problem Statement**
 PEW Retail Inc. Ltd. has subsidiaries across the globe, selling products to various customers scattered across different geographies. They aim to create a consolidated dashboard to meet the following requirements:
